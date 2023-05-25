@@ -22,6 +22,12 @@ export LC_ALL=en_US.UTF-8 # Use english as language
 export CLICOLOR=1 # Color output of commands, used by e.g. ls
 export LESS="-F $LESS"
 export EDITOR=nvim
+export POWERLEVEL9K_SHOW_RULER=false
+export POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR=' '
+export POWERLEVEL9K_MULTILINE_FIRST_PROMPT_SUFFIX=''
+export POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_SUFFIX=''
+export POWERLEVEL9K_MULTILINE_LAST_PROMPT_SUFFIX=''
+export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 
 alias ll="ls -la"
 
