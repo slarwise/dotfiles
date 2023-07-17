@@ -1,7 +1,2 @@
 alt - return : open -a "Wezterm"
 shift + alt - return : open -a "Safari"
-
-alt - j : skhd --key "cmd - tab"
-alt - k : skhd --key "cmd + shift - tab"
-alt - h : skhd --key "alt - tab"
-alt - l : skhd --key "alt + shift - tab"
