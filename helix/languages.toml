@@ -11,3 +11,7 @@ formatter = { command = "prettier", args = [
 [[language]]
 name = "toml"
 auto-format = true
+
+[[language]]
+name = "lua"
+auto-format = true
