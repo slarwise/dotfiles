@@ -7,3 +7,7 @@ formatter = { command = "prettier", args = [
   "--prose-wrap",
   "always",
 ] }
+
+[[language]]
+name = "toml"
+auto-format = true
