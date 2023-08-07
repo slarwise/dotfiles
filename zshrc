@@ -14,6 +14,8 @@ setopt HIST_IGNORE_SPACE
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 bindkey -v # Vi keybindings
+bindkey '^p' autosuggest-accept
+bindkey '^n' autosuggest-execute
 
 export PATH=/usr/local/opt/python/libexec/bin:$PATH
 export PATH=$PATH:~/.bin
@@ -33,6 +35,7 @@ export BAT_THEME=base16
 alias ll="ls -la"
 
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 eval "$(direnv hook zsh)"
 
