@@ -9,4 +9,5 @@ return {
   initial_cols = 999,
   initial_rows = 999,
   audible_bell = "Disabled",
+  window_background_opacity = 0.95,
 }

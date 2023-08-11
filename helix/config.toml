@@ -1,4 +1,4 @@
-theme = "sonokai"
+theme = "mysonokai"
 
 [editor]
 cursorline = true
