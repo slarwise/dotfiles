@@ -1,2 +1,4 @@
-alt - return : open -a "Wezterm"
-shift + alt - return : open -a "Safari"
+alt - t : open -a "Wezterm"
+alt - s : open -a "Safari"
+alt - f : open -a "Finder"
+alt - d : open ~/Downloads
