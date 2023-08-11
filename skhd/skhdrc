@@ -2,3 +2,6 @@ alt - t : open -a "Wezterm"
 alt - s : open -a "Safari"
 alt - f : open -a "Finder"
 alt - d : open ~/Downloads
+
+alt - w : skhd -k "cmd - w"
+alt - q : skhd -k "cmd - q"
