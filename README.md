@@ -29,7 +29,15 @@ brew install \
   zsh-autosuggestions
 ```
 
-Symlink the dotfiles.
+Symlink the dotfiles:
+
+```sh
+ln -s "$PWD"/helix "$HOME"/.config/helix
+ln -s "$PWD"/skhd "$HOME"/.config/skhd
+ln -s "$PWD"/wezterm "$HOME"/.config/wezterm
+ln -s "$PWD"/p10k.zsh "$HOME"/.p10k.zsh
+ln -s "$PWD"/zshrc "$HOME"/.zshrc
+```
 
 See
 [this gist](https://gist.github.com/slarwise/d42e1d336c5d65ff5cb13851ea9048b7)
