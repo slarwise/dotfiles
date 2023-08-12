@@ -17,7 +17,6 @@ brew install \
   fzf \
   git \
   gitui \
-  gnutls \
   helix \
   jq \
   neovim \
