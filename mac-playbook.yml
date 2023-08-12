@@ -1,0 +1,39 @@
+- name: Install software
+  hosts: localhost
+  become: false
+  pre_tasks:
+    - name: Check if brew is installed
+      stat:
+        path: /usr/local/bin/brew
+      register: homebrew_check
+    - name: Fail if brew is not installed
+      fail:
+        msg: Brew is missing, install from http://brew.sh
+      when:
+        - not homebrew_check.stat.exists
+  tasks:
+    - name: Install packages
+      homebrew:
+        name:
+          - yq
+          - helix
+          - powerlevel10k
+          - bat
+          - gnutls
+          - fzf
+          - git
+          - jq
+          - neovim
+          - prettier
+          - ripgrep
+          - yaml-language-server
+          - zsh-autosuggestions
+          - skhd
+          - powerlevel10k
+        state: present
+    - name: Install casks
+      homebrew_cask:
+        name:
+          - amethyst
+          - wezterm
+        state: present
