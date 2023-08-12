@@ -12,17 +12,22 @@ Install homebrew and software:
 brew install \
   amethyst \
   bat \
+  fd \
+  firefox \
   fzf \
   git \
+  gitui \
   gnutls \
   helix \
   jq \
   neovim \
+  node \
   powerlevel10k \
   powerlevel10k \
   prettier \
   ripgrep \
   skhd \
+  tree \
   wezterm \
   yaml-language-server \
   yq \
