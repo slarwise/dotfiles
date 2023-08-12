@@ -5,19 +5,31 @@ separate repo, [slarwise/nvim-config](https://github.com/slarwise/nvim-config).
 
 ## Mac setup
 
-Install homebrew and ansible:
+Install homebrew and software:
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install ansible
+brew install \
+  amethyst \
+  bat \
+  fzf \
+  git \
+  gnutls \
+  helix \
+  jq \
+  neovim \
+  powerlevel10k \
+  powerlevel10k \
+  prettier \
+  ripgrep \
+  skhd \
+  wezterm \
+  yaml-language-server \
+  yq \
+  zsh-autosuggestions
 ```
 
-Symlink the dotfiles. Use the ansible playbook to install programs with
-homebrew.
-
-```sh
-ansible-playbook mac-playbook.yml
-```
+Symlink the dotfiles.
 
 See
 [this gist](https://gist.github.com/slarwise/d42e1d336c5d65ff5cb13851ea9048b7)
