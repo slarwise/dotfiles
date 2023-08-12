@@ -47,3 +47,7 @@ ln -s "$PWD"/zshrc "$HOME"/.zshrc
 See
 [this gist](https://gist.github.com/slarwise/d42e1d336c5d65ff5cb13851ea9048b7)
 for how to make the macbook feel good.
+
+See
+[this page](https://blog.gitguardian.com/8-easy-steps-to-set-up-multiple-git-accounts/)
+for how to setup git credentials in a good way.
