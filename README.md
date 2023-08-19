@@ -17,6 +17,7 @@ brew install \
   fzf \
   git \
   gitui \
+  hammerspoon \
   helix \
   jq \
   neovim \
@@ -41,6 +42,7 @@ ln -s "$PWD"/skhd "$HOME"/.config/skhd
 ln -s "$PWD"/wezterm "$HOME"/.config/wezterm
 ln -s "$PWD"/p10k.zsh "$HOME"/.p10k.zsh
 ln -s "$PWD"/zshrc "$HOME"/.zshrc
+ln -s "$PWD"/hammerspoon/init.lua "$HOME"/.hammerspoon/
 ```
 
 See
