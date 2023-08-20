@@ -1,3 +1,5 @@
+local myLogger = hs.logger.new("myLogger", "debug")
+
 require("hs.ipc")
 hs.ipc.cliInstall()
 
