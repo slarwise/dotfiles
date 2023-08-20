@@ -55,5 +55,7 @@ PaperWM:bindHotkeys({
 PaperWM.window_gap = 30
 PaperWM:start()
 
-ScreenComplete = hs.loadSpoon("screencomplete")
-hs.hotkey.bind("alt", "w", ScreenComplete.run)
+hs.loadSpoon("ScreenWords")
+spoon.ScreenWords:bindHotKeys({
+  chooseWord = { { "alt" }, "w" },
+})
