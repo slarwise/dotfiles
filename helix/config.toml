@@ -2,6 +2,7 @@ theme = "mysonokai"
 
 [editor]
 cursorline = true
+gutters = ["diagnostics", "diff"]
 
 [editor.cursor-shape]
 insert = "bar"
