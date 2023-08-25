@@ -15,3 +15,11 @@ auto-format = true
 [[language]]
 name = "lua"
 auto-format = true
+
+[language.config.Lua.workspace]
+library = [
+  "/Users/arvidbjurklint/.hammerspoon/Spoons/EmmyLua.spoon/annotations",
+]
+
+[language.config.Lua.diagnostics]
+globals = ["hs"]

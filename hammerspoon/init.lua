@@ -3,6 +3,8 @@ local myLogger = hs.logger.new("myLogger", "debug")
 require("hs.ipc")
 hs.ipc.cliInstall()
 
+hs.loadSpoon("EmmyLua")
+
 hs.hotkey.bind("alt", "s", function() hs.application.launchOrFocus("Safari") end)
 hs.hotkey.bind("alt", "t", function() hs.application.launchOrFocus("Wezterm") end)
 
