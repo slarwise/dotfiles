@@ -31,6 +31,7 @@ brew install \
   wezterm \
   yaml-language-server \
   yq \
+  zoxide \
   zsh-autosuggestions
 ```
 
