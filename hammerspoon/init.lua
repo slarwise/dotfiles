@@ -7,7 +7,15 @@ hs.loadSpoon("SpoonInstall")
 spoon.SpoonInstall:andUse("EmmyLua")
 spoon.SpoonInstall:andUse("Shade")
 spoon.SpoonInstall:andUse("RecursiveBinder", {
-  config = { escapeKey = { { "ctrl" }, "[" } },
+  config = {
+    escapeKey = { { "ctrl" }, "[" },
+    helperFormat = {
+      atScreenEdge = 0,
+      strokeColor = { white = 0, alpha = 2 },
+      textFont = "Menlo",
+      textSize = 20,
+    },
+  },
   fn = function(RecursiveBinder)
     local singleKey = RecursiveBinder.singleKey
     local keyMap = {
