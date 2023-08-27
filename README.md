@@ -29,6 +29,7 @@ brew install \
   skhd \
   tree \
   wezterm \
+  wget \
   yaml-language-server \
   yq \
   zoxide \
@@ -41,7 +42,18 @@ Symlink the dotfiles:
 ln -s "$PWD"/{helix,skhd,wezterm} "$HOME"/.config
 ln -s "$PWD"/p10k.zsh "$HOME"/.p10k.zsh
 ln -s "$PWD"/zshrc "$HOME"/.zshrc
+mkdir -p "$HOME"/.hammerspoon/Spoons
 ln -s "$PWD"/hammerspoon/init.lua "$HOME"/.hammerspoon/init.lua
+```
+
+Setup hammerspoon:
+
+```sh
+wget --directory-prefix="$HOME"/.hammerspoon/Spoons https://github.com/Hammerspoon/Spoons/raw/master/Spoons/SpoonInstall.spoon.zip
+unzip "$HOME"/.hammerspoon/Spoons/SpoonInstall.spoon.zip -d "$HOME"/.hammerspoon/Spoons
+git clone https://github.com/mogenson/PaperWM.spoon ~/.hammerspoon/Spoons/PaperWM.spoon
+git clone https://github.com/slarwise/ScreenWords.spoon ~/.hammerspoon/Spoons/ScreenWords.spoon
+open -a Hammerspoon
 ```
 
 See
