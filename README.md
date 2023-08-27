@@ -38,12 +38,10 @@ brew install \
 Symlink the dotfiles:
 
 ```sh
-ln -s "$PWD"/helix "$HOME"/.config/helix
-ln -s "$PWD"/skhd "$HOME"/.config/skhd
-ln -s "$PWD"/wezterm "$HOME"/.config/wezterm
+ln -s "$PWD"/{helix,skhd,wezterm} "$HOME"/.config
 ln -s "$PWD"/p10k.zsh "$HOME"/.p10k.zsh
 ln -s "$PWD"/zshrc "$HOME"/.zshrc
-ln -s "$PWD"/hammerspoon/init.lua "$HOME"/.hammerspoon/
+ln -s "$PWD"/hammerspoon/init.lua "$HOME"/.hammerspoon/init.lua
 ```
 
 See
