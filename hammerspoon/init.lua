@@ -6,59 +6,6 @@ hs.ipc.cliInstall()
 hs.loadSpoon("SpoonInstall")
 spoon.SpoonInstall:andUse("EmmyLua")
 spoon.SpoonInstall:andUse("Shade")
-spoon.SpoonInstall:andUse("RecursiveBinder", {
-  config = {
-    escapeKey = { { "ctrl" }, "[" },
-    helperFormat = {
-      atScreenEdge = 0,
-      strokeColor = { white = 0, alpha = 2 },
-      textFont = "Menlo",
-      textSize = 20,
-    },
-  },
-  fn = function(RecursiveBinder)
-    local singleKey = RecursiveBinder.singleKey
-    local keyMap = {
-      [singleKey("w", "safari")] = function() hs.application.launchOrFocus("Safari") end,
-      [singleKey("t", "wezterm")] = function() hs.application.launchOrFocus("Wezterm") end,
-      [singleKey("h", "hammerspoon")] = {
-        [singleKey("r", "reload config")] = function()
-          hs.reload()
-        end,
-        [singleKey("c", "open console")] = function()
-          hs.openConsole()
-        end,
-      },
-      [singleKey("s", "special ✨")] = {
-        [singleKey("s", "toggle shade")] = function()
-          spoon.Shade:toggleShade()
-        end,
-        [singleKey("w", "grab word")] = function()
-          spoon.ScreenWords:chooseWord()
-        end,
-      },
-      [singleKey("m", "Mac system")] = {
-        [singleKey("S", "shutdown")] = function()
-          hs.caffeinate.shutdownSystem()
-        end,
-        [singleKey("l", "lock screen")] = function()
-          hs.caffeinate.lockScreen()
-        end,
-        [singleKey("r", "reboot")] = function()
-          hs.caffeinate.restartSystem()
-        end,
-        [singleKey("s", "screensaver")] = function()
-          hs.caffeinate.startScreensaver()
-        end,
-        [singleKey("e", "sleep")] = function()
-          hs.caffeinate.systemSleep()
-        end,
-      },
-    }
-    hs.hotkey.bind({ "alt" }, "space",
-      RecursiveBinder.recursiveBind(keyMap))
-  end
-})
 
 hs.loadSpoon("PaperWM")
 spoon.PaperWM.window_gap = 30
@@ -110,3 +57,7 @@ spoon.PaperWM:bindHotkeys({
 spoon.PaperWM:start()
 
 hs.loadSpoon("ScreenWords")
+hs.loadSpoon("RadialMenu")
+spoon.RadialMenu:bindHotKeys({
+  launch = { { "alt" }, "space" }
+})

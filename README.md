@@ -53,6 +53,7 @@ wget --directory-prefix="$HOME"/.hammerspoon/Spoons https://github.com/Hammerspo
 unzip "$HOME"/.hammerspoon/Spoons/SpoonInstall.spoon.zip -d "$HOME"/.hammerspoon/Spoons
 git clone https://github.com/slarwise/PaperWM.spoon ~/.hammerspoon/Spoons/PaperWM.spoon
 git clone https://github.com/slarwise/ScreenWords.spoon ~/.hammerspoon/Spoons/ScreenWords.spoon
+git clone https://github.com/slarwise/RadialMenu.spoon ~/.hammerspoon/Spoons/RadialMenu.spoon
 open -a Hammerspoon
 ```
 
