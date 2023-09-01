@@ -26,6 +26,7 @@ brew install \
   powerlevel10k \
   prettier \
   ripgrep \
+  shfmt \
   skhd \
   tree \
   wezterm \

@@ -23,3 +23,9 @@ library = [
 
 [language.config.Lua.diagnostics]
 globals = ["hs"]
+
+[[language]]
+name = "bash"
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = 'shfmt', args = ["-i", "4"] }
+auto-format = true
