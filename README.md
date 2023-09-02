@@ -14,6 +14,7 @@ brew install \
   bat \
   fd \
   firefox \
+  fswatch \
   fzf \
   git \
   gitui \
@@ -28,6 +29,7 @@ brew install \
   ripgrep \
   shfmt \
   skhd \
+  tldr \
   tree \
   wezterm \
   wget \
