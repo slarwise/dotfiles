@@ -55,9 +55,3 @@ spoon.PaperWM:bindHotkeys({
   move_window_9  = { { "alt", "cmd" }, "9" }
 })
 spoon.PaperWM:start()
-
-hs.loadSpoon("ScreenWords")
-hs.loadSpoon("RadialMenu")
-spoon.RadialMenu:bindHotKeys({
-  launch = { { "alt" }, "space" }
-})
