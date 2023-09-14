@@ -9,6 +9,7 @@ spoon.SpoonInstall:andUse("Shade")
 
 hs.loadSpoon("PaperWM")
 spoon.PaperWM.window_gap = 30
+spoon.PaperWM.window_ratios = { 0.38195, 0.5, 0.61804 }
 spoon.PaperWM:bindHotkeys({
   -- switch to a new focused window in tiled grid
   focus_left     = { { "alt" }, "h" },
