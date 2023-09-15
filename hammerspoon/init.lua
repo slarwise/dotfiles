@@ -9,7 +9,17 @@ spoon.SpoonInstall:andUse("Shade")
 
 hs.loadSpoon("PaperWM")
 spoon.PaperWM.window_gap = 30
-spoon.PaperWM.window_ratios = { 0.38195, 0.5, 0.61804 }
+local function fitPaperWMRatiosToScreen(activeScreenChanged)
+  if not activeScreenChanged then return end
+  local screenWidth = hs.screen.mainScreen():frame().w
+  if screenWidth >= 2000 then
+    spoon.PaperWM.window_ratios = { 1 / 3, 1 / 2, 2 / 3 }
+  else
+    spoon.PaperWM.window_ratios = { 0.38195, 0.5, 0.61804 }
+  end
+end
+fitPaperWMRatiosToScreen(true)
+Watcher = hs.screen.watcher.newWithActiveScreen(fitPaperWMRatiosToScreen):start()
 spoon.PaperWM:bindHotkeys({
   -- switch to a new focused window in tiled grid
   focus_left     = { { "alt" }, "h" },
