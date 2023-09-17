@@ -3,6 +3,7 @@ theme = "mysonokai"
 [editor]
 cursorline = true
 gutters = ["diagnostics", "diff"]
+soft-wrap.enable = true
 
 [editor.cursor-shape]
 insert = "bar"
