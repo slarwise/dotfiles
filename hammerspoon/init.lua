@@ -34,10 +34,10 @@ spoon.PaperWM:bindHotkeys({
   swap_down      = { { "alt", "cmd" }, "j" },
 
   -- position and resize focused window
-  center_window  = { { "alt" }, "/" },
-  full_width     = { { "alt" }, "m" },
-  cycle_width    = { { "alt" }, "," },
-  cycle_height   = { { "alt" }, "." },
+  center_window  = { { "alt" }, "c" },
+  full_width     = { { "alt" }, "f" },
+  cycle_width    = { { "alt" }, "r" },
+  cycle_height   = { { "alt", "cmd" }, "r" },
 
   -- move focused window into / out of a column
   slurp_in       = { { "alt" }, "i" },
