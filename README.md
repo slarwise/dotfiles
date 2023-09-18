@@ -29,6 +29,7 @@ brew install \
   ripgrep \
   shfmt \
   skhd \
+  thefuck \
   tldr \
   tree \
   wezterm \
