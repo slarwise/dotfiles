@@ -27,6 +27,7 @@ brew install \
   powerlevel10k \
   prettier \
   ripgrep \
+  runme \
   shfmt \
   skhd \
   thefuck \
