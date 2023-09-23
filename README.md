@@ -10,7 +10,6 @@ Install homebrew and software:
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install \
-  amethyst \
   bat \
   fd \
   firefox \
