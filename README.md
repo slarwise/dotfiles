@@ -3,12 +3,20 @@
 Configuration files and software setup. The configuration for neovim is in a
 separate repo, [slarwise/nvim-config](https://github.com/slarwise/nvim-config).
 
+[runme](https://github.com/stateful/runme) is a nice tool for running code
+snippets from markdown files, such as the commands below.
+
 ## Mac setup
 
-Install homebrew and software:
+Install homebrew:
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Install software:
+
+```sh
 brew install \
   bat \
   fd \
