@@ -22,6 +22,7 @@ export PATH=$PATH:~/.bin
 # export LANG="sv_SE.UTF-8" Can't remember why I added this
 export LC_ALL=en_US.UTF-8 # Use english as language
 export CLICOLOR=1 # Color output of commands, used by e.g. ls
+export LS_COLORS="${LS_COLORS:-""}" # Set to empty so that `fd` uses terminal colors
 export LESS="--quit-if-one-screen --RAW-CONTROL-CHARS"
 export EDITOR=hx
 export POWERLEVEL9K_SHOW_RULER=false
