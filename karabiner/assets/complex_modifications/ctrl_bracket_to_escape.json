@@ -1,0 +1,26 @@
+{
+  "title": "Map Ctrl-[ to Escape",
+  "rules": [
+    {
+      "description": "Map Ctrl-[ to Escape. Works with both US and Swedish keyboard layout.",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -28,6 +28,7 @@ brew install \
   hammerspoon \
   helix \
   jq \
+  karabiner-elements \
   neovim \
   node \
   powerlevel10k \
@@ -56,6 +57,7 @@ ln -s "$PWD"/p10k.zsh "$HOME"/.p10k.zsh
 ln -s "$PWD"/zshrc "$HOME"/.zshrc
 mkdir -p "$HOME"/.hammerspoon/Spoons
 ln -s "$PWD"/hammerspoon/init.lua "$HOME"/.hammerspoon/init.lua
+ln -s "$PWD"/karabiner/assets/complex_modifications/* "$HOME"/.config/karabiner/assets/complex_modifications/
 ```
 
 Setup hammerspoon:
