@@ -26,7 +26,7 @@ brew install \
   git \
   gitui \
   hammerspoon \
-  helix \
+  helix --HEAD \
   jq \
   karabiner-elements \
   neovim \
