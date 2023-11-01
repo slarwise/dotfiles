@@ -34,6 +34,7 @@ export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 export BAT_THEME=base16
 
 alias ll="ls -la"
+alias k=kubectl
 
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
