@@ -33,3 +33,7 @@ auto-format = true
 [[language]]
 name = "starlark"
 file-types = ["bzl", "bazel", "BUILD", "star", "Tiltfile"]
+
+[[language]]
+name = "javascript"
+auto-format = true
