@@ -65,7 +65,7 @@ Setup hammerspoon:
 ```sh
 wget --directory-prefix="$HOME"/.hammerspoon/Spoons https://github.com/Hammerspoon/Spoons/raw/master/Spoons/SpoonInstall.spoon.zip
 unzip "$HOME"/.hammerspoon/Spoons/SpoonInstall.spoon.zip -d "$HOME"/.hammerspoon/Spoons
-git clone https://github.com/slarwise/PaperWM.spoon ~/.hammerspoon/Spoons/PaperWM.spoon
+git clone https://github.com/mogenson/PaperWM.spoon ~/.hammerspoon/Spoons/PaperWM.spoon
 open -a Hammerspoon
 ```
 
