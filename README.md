@@ -28,7 +28,6 @@ brew install \
   hammerspoon \
   helix --HEAD \
   jq \
-  karabiner-elements \
   neovim \
   node \
   powerlevel10k \
