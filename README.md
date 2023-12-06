@@ -31,7 +31,6 @@ brew install \
   neovim \
   node \
   powerlevel10k \
-  powerlevel10k \
   prettier \
   ripgrep \
   runme \
