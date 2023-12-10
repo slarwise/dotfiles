@@ -38,6 +38,9 @@ alias k=kubectl
 
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [ -x $(command -v kubectl) ]; then
+  source <(kubectl completion zsh)
+fi
 
 eval "$(direnv hook zsh)"
 eval "$(zoxide init zsh)"
