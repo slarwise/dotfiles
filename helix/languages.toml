@@ -37,3 +37,8 @@ file-types = ["bzl", "bazel", "BUILD", "star", "Tiltfile"]
 [[language]]
 name = "javascript"
 auto-format = true
+
+[[language]]
+name = "yaml"
+formatter = { command = 'yamlfmt', args = ["-"] }
+auto-format = true
