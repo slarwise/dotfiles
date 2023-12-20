@@ -42,3 +42,11 @@ auto-format = true
 name = "yaml"
 formatter = { command = 'yamlfmt', args = ["-"] }
 auto-format = true
+
+[language-server.yaml-language-server.config.yaml]
+completion = true
+validation = true
+
+[language-server.yaml-language-server.config.yaml.schemas]
+"https://json.schemastore.org/github-workflow.json" = ".github/workflows/*.{yml,yaml}"
+kubernetes = "*.yaml"
