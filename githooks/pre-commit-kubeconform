@@ -1,0 +1,18 @@
+#!/bin/sh
+# Validate Kubernetes manifests, including custom resource definitions,
+# using https://github.com/yannh/kubeconform
+# Copy this file to .git/hooks/pre-commit to enable it
+set -eo pipefail
+
+FILES="$(git diff --staged --name-only --diff-filter=ACMR)"
+
+if [ -z "$FILES" ]; then
+    exit 0
+fi
+
+if [ ! -x "$(command -v kubeconform)" ]; then
+    echo "error: kubeconform must be installed" >&2
+    exit 1
+fi
+
+kubeconform -strict -schema-location default -schema-location 'https://raw.githubusercontent.com/datreeio/CRDs-catalog/main/{{.Group}}/{{.ResourceKind}}_{{.ResourceAPIVersion}}.json' "$FILES"
