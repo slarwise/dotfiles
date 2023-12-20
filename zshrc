@@ -35,6 +35,7 @@ export BAT_THEME=base16
 
 alias ll="ls -la"
 alias k=kubectl
+alias kvalidate="kubeconform -strict -schema-location default -schema-location 'https://raw.githubusercontent.com/datreeio/CRDs-catalog/main/{{.Group}}/{{.ResourceKind}}_{{.ResourceAPIVersion}}.json'"
 
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh

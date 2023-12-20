@@ -28,7 +28,9 @@ brew install \
   hammerspoon \
   helix --HEAD \
   jq \
+  kubectl \
   kubectx \
+  kubeconform \
   neovim \
   node \
   powerlevel10k \
