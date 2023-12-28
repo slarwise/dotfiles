@@ -11,11 +11,7 @@ setopt autocd
 setopt globstarshort # Writing ** means **/*
 setopt HIST_IGNORE_SPACE
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 bindkey -v # Vi keybindings
-bindkey '^p' autosuggest-accept
-bindkey '^n' autosuggest-execute
 
 export PATH=/usr/local/opt/python/libexec/bin:$PATH
 export PATH=$PATH:~/.bin
@@ -32,16 +28,21 @@ export POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_SUFFIX=''
 export POWERLEVEL9K_MULTILINE_LAST_PROMPT_SUFFIX=''
 export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 export BAT_THEME=base16
+[ -x $(command -v brew) ] && export HOMEBREW_PREFIX="${HOMEBREW_PREFIX:-$(brew --prefix)}"
 
 alias ll="ls -la"
 alias k=kubectl
 alias kvalidate="kubeconform -strict -schema-location default -schema-location 'https://raw.githubusercontent.com/datreeio/CRDs-catalog/main/{{.Group}}/{{.ResourceKind}}_{{.ResourceAPIVersion}}.json'"
 
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOMEBREW_PREFIX/opt/powerlevel10k/powerlevel10k.zsh-theme
 if [ -x $(command -v kubectl) ]; then
   source <(kubectl completion zsh)
 fi
+
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+bindkey '^p' autosuggest-accept
+bindkey '^n' autosuggest-execute
 
 eval "$(direnv hook zsh)"
 eval "$(zoxide init zsh)"
