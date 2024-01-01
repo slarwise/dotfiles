@@ -15,6 +15,7 @@ bindkey -v # Vi keybindings
 
 export PATH=/usr/local/opt/python/libexec/bin:$PATH
 export PATH=$PATH:~/.bin
+[ -d $HOME/go ] && export PATH=$HOME/go/bin:$PATH
 # export LANG="sv_SE.UTF-8" Can't remember why I added this
 export LC_ALL=en_US.UTF-8 # Use english as language
 export CLICOLOR=1 # Color output of commands, used by e.g. ls
