@@ -5,6 +5,7 @@ cursorline = true
 gutters = ["diagnostics", "diff"]
 soft-wrap.enable = true
 scrolloff = 0
+auto-pairs = false
 
 [editor.cursor-shape]
 insert = "bar"
