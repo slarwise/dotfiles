@@ -39,7 +39,6 @@ brew install \
   runme \
   shfmt \
   skhd \
-  thefuck \
   tldr \
   tree \
   wezterm \
