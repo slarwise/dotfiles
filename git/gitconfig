@@ -1,2 +1,4 @@
 [alias]
 	graph = log --graph --oneline --decorate
+[core]
+	excludesfile = ~/.config/git/ignore
