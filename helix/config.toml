@@ -13,5 +13,8 @@ insert = "bar"
 [editor.indent-guides]
 render = true
 
+[keys.normal]
+C-l = ":reload-all"
+
 [keys.normal."space"]
 C-f = "file_picker_in_current_buffer_directory"
