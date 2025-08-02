@@ -52,7 +52,7 @@ brew install \
 Symlink the dotfiles:
 
 ```sh
-ln -s "$PWD"/{helix,skhd,wezterm} "$HOME"/.config
+ln -s "$PWD"/{helix,skhd,wezterm,trivy} "$HOME"/.config
 ln -s "$PWD"/p10k.zsh "$HOME"/.p10k.zsh
 ln -s "$PWD"/zshrc "$HOME"/.zshrc
 mkdir -p "$HOME"/.hammerspoon/Spoons
