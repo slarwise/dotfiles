@@ -11,7 +11,7 @@
     {{- if eq .Severity "LOW" }}{{- $low = add $low 1 }} {{- end }}
     {{- if eq .Severity "UNKNOWN" }}{{- $unknown = add $unknown 1 }} {{- end }}
   {{- end }}
-{{- end }}
+{{- end -}}
 {
   "critical": {{ $critical }},
   "high": {{ $high }},
